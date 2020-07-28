@@ -12,9 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".ActivitySplash"
-            tools:ignore="DuplicateActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ActivityHomePage" />
+        <activity android:name=".ActivitySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
