@@ -1,5 +1,6 @@
 package com.example.androidgittesting;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -38,10 +39,11 @@ public class SteggeredRecyclerViewAdapter extends RecyclerView.Adapter<Steggered
         return new ViewHolder(view);
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
 
-        Log.d(TAG, "onBindViewHolder: called.");
+        Log.d(TAG, "onBindViewHolder: called");
 
         RequestOptions requestOptions = new RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background);
